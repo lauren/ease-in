@@ -7,6 +7,7 @@ A simple library to fade in DOM elements hierarchically using CSS transitions an
 
 ```html
 <script src="js/ease-in.min.js"></script>
+```
 
 2. Add this CSS to all the items you want to fade in:
 
