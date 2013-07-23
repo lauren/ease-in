@@ -1,0 +1,20 @@
+.transition(@transition) {
+  -webkit-transition: @transition;
+     -moz-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}
+
+.opacity-transition {
+  .transition(opacity 0.5s ease-in-out);
+}
+
+.visible {
+  opacity: 1;
+  .opacity-transition;
+}
+
+body * {
+  opacity: 0;
+  .opacity-transition;
+}
