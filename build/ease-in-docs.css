@@ -1,9 +1,0 @@
-@import url(http://reset5.googlecode.com/hg/reset.min.css);
-body{text-align:center;font-family:"HelveticaNeue-UltraLight","Helvetica Neue UltraLight","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,sans-serif;margin:20px auto;padding:10px;max-width:600px;color:#333}
-h1{font-family:"HelveticaNeue-UltraLight","Helvetica Neue UltraLight","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,sans-serif;font-weight:lighter;font-size:50px;margin-bottom:20px;display:inline-block;float:left}
-h2{font-size:16px;margin-bottom:40px;text-align:right;font-weight:normal;font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,sans-serif;line-height:18px}
-p{font-size:18px;line-height:22px;font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,sans-serif;margin-bottom:15px;text-align:left}
-pre,code{font-size:16px;color:#E75166}
-ol{font-size:20px;line-height:24px;font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,sans-serif;text-align:left;margin-left:30px;clear:both}ol li{margin-bottom:20px}
-footer{font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,sans-serif;font-size:16px;margin-top:50px;line-height:22px}
-@media (max-width:600px){h1{display:block;float:none} h2{text-align:left}}
