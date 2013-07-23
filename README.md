@@ -1,4 +1,4 @@
-[Open in Spotify](http://lauren.github.io/ease-in/)
+[Ease In](http://lauren.github.io/ease-in/)
 ===============
 
 A simple library to fade in DOM elements hierarchically using CSS transitions and 415 bytes of vanilla Javascript.
@@ -18,6 +18,7 @@ A simple library to fade in DOM elements hierarchically using CSS transitions an
        -o-transition: opacity .5s ease-in-out;
           transition: opacity .5s ease-in-out;
 }
+```
 
 3. Add this declaration to your stylesheet:
 
@@ -29,13 +30,15 @@ A simple library to fade in DOM elements hierarchically using CSS transitions an
        -o-transition: opacity .5s ease-in-out;
           transition: opacity .5s ease-in-out
 }
+```
 
 4. Seriously, this won't work unless you add that CSS, but feel free to modify the transition duration and style if you like.
 
-5.mAfter the DOM has loaded, call easeIn on the element collection of our choice. For instance, this page uses:
+5.After the DOM has loaded, call easeIn on the element collection of our choice. For instance, this page uses:
 
 ```js
 easeIn(document.body.children);
+```
 
 easeIn will sequentially apply the .visible class to each element in the collection you pass it, including all child elements if any are available.
 
@@ -43,6 +46,7 @@ easeIn will sequentially apply the .visible class to each element in the collect
 
 ```js
 easeIn(document.body.children, 200);
+```
 
 Contributing
 ------------
