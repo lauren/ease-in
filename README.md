@@ -8,7 +8,6 @@ A simple library to fade in DOM elements hierarchically using CSS transitions an
 ```html
 <script src="js/ease-in.min.js"></script>
 ```
-
 2. Add this CSS to all the items you want to fade in:
 
 ```css
@@ -20,7 +19,6 @@ A simple library to fade in DOM elements hierarchically using CSS transitions an
           transition: opacity .5s ease-in-out;
 }
 ```
-
 3. Add this declaration to your stylesheet:
 
 ```css
@@ -32,10 +30,9 @@ A simple library to fade in DOM elements hierarchically using CSS transitions an
           transition: opacity .5s ease-in-out
 }
 ```
-
 4. Seriously, this won't work unless you add that CSS, but feel free to modify the transition duration and style if you like.
 
-5.After the DOM has loaded, call easeIn on the element collection of our choice. For instance, this page uses:
+5. After the DOM has loaded, call easeIn on the element collection of our choice. For instance, this page uses:
 
 ```js
 easeIn(document.body.children);
