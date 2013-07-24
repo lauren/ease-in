@@ -9,7 +9,7 @@ module.exports = function(grunt) {
           compress: true
         },
         files: {
-          "build/ease-in-docs.css": "src/ease-in-docs.less"
+          "build/<%= pkg.name %>.css": "src/<%= pkg.name %>.less"
         }
       },
       production: {
@@ -17,7 +17,7 @@ module.exports = function(grunt) {
           compress: true
         },
         files: {
-          "build/ease-in-docs.css": "src/ease-in-docs.less"
+          "build/<%= pkg.name %>.css": "src/<%= pkg.name %>.less"
         }
       }
     },
