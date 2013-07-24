@@ -5,12 +5,12 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
       options: {
-        banner: '/*! Ease In JS v<%= pkg.version %> | Copyright 2013 Lauren Sperber https://github.com/lauren/ease-in/blob/master/LICENSE | <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+        banner: '/*! Ease In JS v<%= pkg.version %> | Copyright 2013 Lauren Sperber https://github.com/lauren/ease-in/blob/master/LICENSE | <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       my_target: {
         files: {
-          'build/ease-in-<%= pkg.version %>.min.js': ['src/ease-in.js'],
-          'docs/build/ease-in.min.js': ['src/ease-in.js']
+          'build/<%= pkg.name %>-<%= pkg.version %>.min.js': ['src/<%= pkg.name %>.js'],
+          'docs/build/<%= pkg.name %>.min.js': ['src/<%= pkg.name %>.js']
         }
       }
     },
@@ -20,8 +20,8 @@ module.exports = function(grunt) {
           compress: true
         },
         files: {
-          "build/ease-in-<%= pkg.version %>.css": "src/ease-in.less",
-          "docs/build/ease-in.css": "src/ease-in.less"
+          "build/<%= pkg.name %>-<%= pkg.version %>.css": "src/<%= pkg.name %>.less",
+          "docs/build/<%= pkg.name %>.css": "src/<%= pkg.name %>.less"
         }
       },
       production: {
@@ -29,8 +29,8 @@ module.exports = function(grunt) {
           compress: true
         },
         files: {
-          "build/ease-in-<%= pkg.version %>.css": "src/ease-in.less",
-          "docs/build/ease-in.css": "src/ease-in.less"
+          "build/<%= pkg.name %>-<%= pkg.version %>.css": "src/<%= pkg.name %>.less",
+          "docs/build/<%= pkg.name %>.css": "src/<%= pkg.name %>.less"
         }
       }
     },
