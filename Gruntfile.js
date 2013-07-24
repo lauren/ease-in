@@ -15,15 +15,6 @@ module.exports = function(grunt) {
       }
     },
     less: {
-      development: {
-        options: {
-          compress: true
-        },
-        files: {
-          "build/<%= pkg.name %>-<%= pkg.version %>.css": "src/<%= pkg.name %>.less",
-          "docs/build/<%= pkg.name %>.css": "src/<%= pkg.name %>.less"
-        }
-      },
       production: {
         options: {
           compress: true
