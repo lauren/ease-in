@@ -1,7 +1,7 @@
 [Ease In](http://lauren.github.io/ease-in/)
 ===============
 
-A simple library to fade in DOM elements hierarchically using CSS transitions and 415 bytes of vanilla Javascript.
+Fade in DOM elements hierarchically using CSS transitions and 415 bytes of JavaScript.
 
 1) Download the source. Add `ease-in.min.js` to your JS directory, and link it in your document before the ending `body` tag:
 
