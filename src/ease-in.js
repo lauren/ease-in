@@ -5,16 +5,14 @@
     if (elements.length > 0) {
       var firstEl = elements[0],
           remainingEls = Array.prototype.slice.call(elements, 1, elements.length);
-      firstEl.className += " visible";
+      // if firstEl has children, prepend them to remainingEls
       if (firstEl.children.length > 0) {
-        setTimeout(function () {
-          easeIn(Array.prototype.slice.call(firstEl.children).concat(remainingEls));
-        }, delay);
-      } else {
-        setTimeout(function () {
-          easeIn(remainingEls);
-        }, delay);
+        remainingEls = Array.prototype.slice.call(firstEl.children).concat(remainingEls);
       }
+      firstEl.className += " visible";
+      setTimeout(function () {
+        easeIn(remainingEls, delay);
+      }, delay);
     }
   };
 
