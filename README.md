@@ -49,6 +49,10 @@ easeIn(document.body.children, 200);
 Contributing
 ------------
 
-1. `npm install --save-dev`
-2. `grunt watch`
-3. Code!
+I ♥ pull requests. Here's how to contribute:
+
+1. Fork and pull repo.
+2. If you don't have node, [install it](http://howtonode.org/how-to-install-nodejs).
+3. From the repo directory, `npm install --save-dev`
+4. `grunt watch`: This will automatically JSHint, concatenate, and minify the JavaScript and automatically compile and minify the LESS every time you save. Watch for JSHint errors and correct them.
+5. Code!
